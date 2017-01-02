@@ -5,16 +5,5 @@ class Account::PostsController < ApplicationController
     @posts = current_user.posts
   end
 
-  def edit
-    @post = Post.find()
-    redirect_to group_post_path
-  end
-
-  def destroy
-    @post = Post.destroy
-    redirect_to group_post_path, alert: "You have no permission."
-
-  end
-
 
 end
