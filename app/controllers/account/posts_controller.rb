@@ -6,7 +6,7 @@ class Account::PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(post.group,post)
+    @post = Post.find()
     redirect_to group_post_path
   end
 
